@@ -13,10 +13,12 @@ $(function(){
 
     jQuery(window).scroll(function () {
         if (jQuery(window).scrollTop() > 400) {
-            jQuery("#navigation").css("background-color","#00C7FC");
+            jQuery("#navigation").css("background-color","#808080");
+            jQuery("#navigation").css("opacity","1")
             jQuery("#navigation").addClass("animated-nav");
         } else {
-            jQuery("#navigation").css("background-color","transparent");
+            jQuery("#navigation").css("background-color","#000");
+            jQuery(".navbar-header").css("opacity","0.6");
             jQuery("#navigation").removeClass("animated-nav");
         }
     });

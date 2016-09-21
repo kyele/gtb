@@ -2,7 +2,8 @@
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+<html lang="en" class="no-js"> <!--<![endif]-->
     <head>
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +21,7 @@
         Google Fonts
         ============================================= -->
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
-		
+    	
         <!--
         CSS
         ============================================= -->
@@ -38,11 +39,22 @@
         <link rel="stylesheet" href="css/main.css">
         <!-- Main Responsive -->
         <link rel="stylesheet" href="css/responsive.css">
-		
-		
-		<!-- Modernizer Script for old Browsers -->
+    	
+    	
+    	<!-- Modernizer Script for old Browsers -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-		
+        <style>
+            .img-logo {
+                width: 130px;
+                height: 100px;
+                position: fixed;
+                top: 15px;
+                left: 15px;
+            }
+            .carousel-img {
+            }
+        </style>
+    	
     </head>
 	
     <body>
@@ -66,7 +78,7 @@
                     <!-- logo -->
                     <h1 class="navbar-brand">
                         <a href="#body">
-                            <img src="img/logo.png" alt="Kasper Logo">
+                            <img src="img/logotb.png" class="img-logo" alt="Kasper Logo">
                         </a>
                     </h1>
                     <!-- /logo -->
@@ -108,7 +120,7 @@
 
                 <div class="carousel-inner">
 
-                    <div class="item active"  style="background-image: url('img/slider/bg1.jpg')" >
+                    <div class="item active"  class="carousel-img" style="background-image: url('img/slider/bg1.jpg')" >
                         <div class="carousel-caption">
                             <div class="animated bounceInRight">
                                 <h2>Filosofía <br>Empresarial</h2>
@@ -117,7 +129,7 @@
                         </div>
                     </div>              
 
-                    <div class="item" style="background-image: url('img/slider/bg2.jpg')">                
+                    <div class="item" class="carousel-img" style="background-image: url('img/slider-carrito.png')">                
                         <div class="carousel-caption">
                             <div class="animated bounceInDown">
                                 <h2>Impulso Tecnológico<br>para grandes ideas.</h2>
@@ -126,7 +138,7 @@
                         </div>
                     </div>
 
-                    <div class="item" style="background-image: url('img/slider/bg3.jpg')">                 
+                    <div class="item" class="carousel-img" style="background-image: url('img/slider-cams.jpeg')">                 
                          <div class="carousel-caption">
                             <div class="animated bounceInUp">
                                 <h2>Seguridad<br>Informatica.</h2>
@@ -138,10 +150,10 @@
                 <!--/.carousel-inner-->
                 <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
                     <a class="sl-prev hidden-xs" href="#home-carousel" data-slide="prev">
-                        <i class="fa fa-angle-left fa-3x"></i>
+                        <i class="fa fa-angle-double-left fa-3x"></i>
                     </a>
                     <a class="sl-next" href="#home-carousel" data-slide="next">
-                        <i class="fa fa-angle-right fa-3x"></i>
+                        <i class="fa fa-angle-double-right fa-3x"></i>
                     </a>
                 </nav>
 
@@ -158,6 +170,12 @@
         <section id="service">
             <div class="container">
                 <div class="row">
+                    <div
+                      class="fb-like"
+                      data-share="true"
+                      data-width="450"
+                      data-show-faces="true">
+                    </div>
                     <div class="col-md-12">
                         <div class="section-title text-center wow fadeInDown">
                             <h2>Nuestros Servicios</h2>    
@@ -450,7 +468,7 @@
                         </div>
 
                         <div id="testimonial">
-
+                            <div class="fb-comments" data-href="https://www.facebook.com/BrothersTechno/reviews/" data-width="auto" data-numposts="8"></div>
                             <div class="tst-item clearfix">
                                 <div class="tst-single clearfix">
                                     <img src="img/client/1.jpg" alt="Client" class="img-circle">
@@ -571,14 +589,14 @@
 
                     <div class="section-title text-center wow fadeInUp">
                         <h2>Promociones</h2>    
-                        <p>Grupo Tb cuenta con algunas promociones. .</p>
+                        <p class="text-info">Grupo Tb cuenta con algunas promociones. .</p>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
                         <div class="pricing-table text-center">
                             <div class="price">
-                                <span class="plan">Pagina Web Autoadministrativa</span>
-                                <span class="value"><small>$</small><strong>7500</strong>/Mex</span>
+                                <span class="plan">Pagina Web <br>Autoadministrativa</span>
+                                <span class="value"><small>$</small><strong>7'500</strong>/Mex</span>
                             </div>
                             <ul class="text-center">
                                 <li>5 Modulos</li>
@@ -593,11 +611,11 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="pricing-table text-center">
                             <div class="price">
                                 <span class="plan">Carrito de <br> Ventas OnLine</span>
-                                <span class="value"><small>$</small><strong>10000</strong>/MEX</span>
+                                <span class="value"><small>$</small><strong>10'000</strong>/MEX</span>
                             </div>
                             <ul class="text-center">
                                 <li>Control Clientes</li>
@@ -608,15 +626,15 @@
                                 <li>Feature Inventario</li>
                                 <li>Pago en linea</li>
                             </ul>
-                            <a href="#" class="btn btn-price">Buy Now</a>
+                            <a href="#" class="btn btn-price">Adquierelo ya</a>
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="pricing-table text-center">
                             <div class="price">
                                 <span class="plan">Kit de <br>Camaras</span>
-                                <span class="value"><small>$</small><strong>6500</strong>/MEX</span>
+                                <span class="value"><small>$</small><strong>6'500</strong>/MEX</span>
                             </div>
                             <ul class="text-center">
                                 <li>4 Camras Domo o Bullet</li>
@@ -628,23 +646,7 @@
                                 <li>Configuración a Internet</li>
                                 
                             </ul>
-                            <a href="#" class="btn btn-price">Buy Now</a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.9s">
-                        <div class="pricing-table text-center">
-                            <div class="price">
-                                <span class="plan">Platinum</span>
-                                <span class="value"><small>$</small><strong>49</strong>/MO</span>
-                            </div>
-                            <ul class="text-center">
-                                <li>Feature N0 1</li>
-                                <li>Feature N0 2</li>
-                                <li>Feature N0 3</li>
-                                <li>Feature N0 4</li>
-                            </ul>
-                            <a href="#" class="btn btn-price">Buy Now</a>
+                            <a href="#" class="btn btn-price">Adquierelo ya</a>
                         </div>
                     </div>
                 </div>
@@ -679,6 +681,7 @@
                     </div>
 
                     <div class="col-md-4 text-left wow fadeInRight">
+                        <br>
                         <p>Deseas Recibir Nuestras Pormociones, dejanos tu mensaje.</p>
                     </div>
                 </div>
@@ -708,7 +711,7 @@
                                     <input type="text" class="form-control" name="name" placeholder="Nombre" required="">
                                 </div>
                                 <div class="input-field">
-                                    <input type="email" class="form-control" name="email" placeholder="YEmail" required="">
+                                    <input type="email" class="form-control" name="email" placeholder="Email" required="">
                                 </div>
                                 <div class="input-field message">
                                     <textarea name="message" class="form-control" placeholder="Escribenos" required=""></textarea>
@@ -744,11 +747,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-
                         <div class="footer-logo wow fadeInDown">
                             <img src="img/logo.png" alt="logo">
                         </div>
-
                         <div class="footer-social wow fadeInUp">
                             <h3>We are social</h3>
                             <ul class="text-center list-inline">
@@ -799,5 +800,30 @@
         <script src="js/wow.min.js"></script>
         <!-- theme custom scripts -->
         <script src="js/main.js"></script>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '1146597928767878',
+              xfbml      : true,
+              version    : 'v2.7'
+            });
+          };
+
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+             FB.ui(
+                {
+                  method: 'share',
+                  href: 'https://developers.facebook.com/docs/'
+                }, function(response){});
+
+           }(document, 'script', 'facebook-jssdk'));
+
+        </script>
+            
     </body>
 </html>
